@@ -77,8 +77,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/15081306/DuoDuo.git", :tag => "0.0.1" }
-
+  s.source       = { :git => "https://github.com/15081306/DuoDuo.git", :tag => s.version,:submodules => true }
+  s.requires_arc = true
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -87,7 +87,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files='DuoDuo/DuoDuo.h'
+  s.source_files="DuoDuo/**/*.{h,m}"
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
