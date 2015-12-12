@@ -78,6 +78,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/15081306/DuoDuo.git", :tag => s.version,:submodules => true }
+
   s.requires_arc = true
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,7 +88,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.source_files="DuoDuo.h"
+  s.source_files="DuoDuo/DuoDuo.h"
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 

@@ -4,6 +4,6 @@ platform :ios, '8.0'
 # use_frameworks!
 
 target 'DuoDuo' do
-pod 'DuoDuoLib', '~> 0.0.1'
+pod 'DuoDuo', '~> 0.0.1',:git => 'https://github.com/15081306/DuoDuo.git' 
 end
 
